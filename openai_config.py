@@ -27,4 +27,4 @@ def ask_gpt4o(user_prompt,system_prompt="you are good assistant"):
     )
 
     return response.choices[0].message.content
-print(ask_gpt4o("how to send async request to any backend in python without any framework? give me some example code"))
+# print(ask_gpt4o("how to send async request to any backend in python without any framework? give me some example code"))
