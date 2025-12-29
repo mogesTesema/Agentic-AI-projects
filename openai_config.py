@@ -4,8 +4,8 @@ from IPython.display import Markdown,display
 
 import os
 load_dotenv()
-GITHUB_OPENAI_API_KEY = os.getenv("GITHUB_OPENAI_API_KEY")
-OPENAI_URL = os.getenv("OPENAI_URL","https://models.inference.ai.azure.com")
+GITHUB_OPENAI_API_KEY = os.environ.get("GITHUB_OPENAI_API_KEY")
+OPENAI_URL = os.environ.get("OPENAI_URL","https://models.inference.ai.azure.com")
 
 client = OpenAI(
     base_url=OPENAI_URL,
