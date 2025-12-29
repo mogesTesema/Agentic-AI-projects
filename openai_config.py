@@ -11,7 +11,9 @@ def in_colab():
         return False
 
 if in_colab():
-    api_key = os.environ.get("GITHUB_OPENAI_API_KEY")
+    from google.colab import userdata
+    api_key = userdata.get('GITHUB_OPENAI_API_KEY')
+    # api_key = os.environ.get("GITHUB_OPENAI_API_KEY")
     if api_key is None:
         raise RuntimeError(
             "GITHUB_OPENAI_API_KEY not found in Colab Secrets"
