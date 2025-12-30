@@ -1,0 +1,3 @@
+[submodule "Advanced-RAG"]
+	path = Advanced-RAG
+	url = https://github.com/guyernest/advanced-rag.git
